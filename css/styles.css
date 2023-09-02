@@ -39,7 +39,7 @@ body {
 .container {
   margin: 0 auto;
   width: 396px;
-  padding: 0 15px;
+  padding: 0 px;
 }
 .container-header {
   display: flex;
@@ -278,10 +278,11 @@ h3 {
 }
 .section-team {
   width: 480px;
-  background-color: #f5f4fa;
+  background-color: var(--cloud);
 
   margin-bottom: 120px;
   padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 .inner-text {
@@ -625,9 +626,9 @@ h3 {
 .clients-main {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   align-content: space-between;
-  gap: 72px;
+  row-gap: 72px;
+  column-gap: 16px;
   align-items: center;
   list-style: none;
   margin-top: 72px;
@@ -698,7 +699,7 @@ h3 {
 .logo2 {
   display: flex;
   font-family: "Raleway";
-
+  justify-content: center;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
@@ -710,7 +711,7 @@ h3 {
 
 .address-social {
   display: flex;
-  gap: 3em;
+  /* gap: 3em; */
 }
 .footer-logo-address {
   display: flex;
@@ -722,6 +723,8 @@ h3 {
 .footer-text {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+
   font-family: "Roboto";
   font-size: 14px;
   line-height: 1.71;
@@ -750,11 +753,12 @@ h3 {
 }
 .f-form {
   display: flex;
-  flex-direction: row;
-  gap: 24px;
+  flex-direction: column;
+  flex-wrap: wrap;
+  /* gap: 24px; */
 }
 .footer-label {
-  display: flex;
+  display: block;
   gap: 1em;
 }
 .input-footer {
@@ -768,6 +772,9 @@ h3 {
   padding-left: 15px;
 }
 .button-footer {
+  display: block;
+  justify-content: space-around;
+  margin-top: 16px;
   position: relative;
   width: 165px;
   height: 40px;
