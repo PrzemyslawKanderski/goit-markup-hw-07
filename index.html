@@ -21,17 +21,70 @@
             >WEB<span class="dark-color">STUDIO</span></a
           >
           <nav>
-            <button class="menu-toggle js-close-menu js-open-menu">
-              <svg class="mobile-icon" width="32" height="22">
-                <use href="./images/icons.svg#icon-charm_menu-hamburger"></use>
-              </svg>
+            <button
+              class="menu-toggle js-open-menu"
+              aria-expanded="false"
+              aria-controls="mobile-menu"
+            >
+              <div class="mobile-visible">
+                <svg width="32" height="22" class="mobile-menu-icon">
+                  <use href="./images/icons.svg#icon-paragraph-justify"></use>
+                </svg>
+              </div>
             </button>
-            <ul class="menu">
-              <li><a href="" class="link">About</a></li>
-              <li><a href="" class="link">Products</a></li>
-              <li><a href="" class="link">Contacts</a></li>
-              <li><a href="" class="link">Career</a></li>
-            </ul>
+            <div class="menu-container js-menu-container" id="mobile-menu">
+              <button class="menu-toggle close-button js-close-menu">x</button>
+
+              <ul class="mobile-menu">
+                <li><a href="index.html" class="link-mobile">Studio</a></li>
+                <li>
+                  <a href="portfolio.html" class="link-mobile">Portfolio</a>
+                </li>
+                <li><a href="" class="link-mobile">Contacts</a></li>
+              </ul>
+              <ul class="mobile-contacts">
+                <li class="mobile-tel">
+                  <a href="tel:+11(000)1111111" class="mobile-tel-to"
+                    >+11 (000) 111 - 11 - 11</a
+                  >
+                </li>
+                <li class="mobile-mail">
+                  <a href="mailto:info@devstudio.com" class="mobile-mail-to"
+                    >info@devstudio.com</a
+                  >
+                </li>
+              </ul>
+              <ul class="mobile-social">
+                <li class="social-icons">
+                  <a class="social-icons-center" href="#">
+                    <svg width="16" height="16">
+                      <use href="./images/icons.svg#icon-instagram-2"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-icons">
+                  <a class="social-icons-center" href="#">
+                    <svg width="16" height="16">
+                      <use href="./images/icons.svg#icon-twitter-1"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-icons">
+                  <a class="social-icons-center" href="#">
+                    <svg width="16" height="16">
+                      <use href="./images/icons.svg#icon-facebook-1"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-icons">
+                  <a class="social-icons-center" href="#">
+                    <svg width="16" height="16">
+                      <use href="./images/icons.svg#icon-linkedin-1"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
           </nav>
           <div class="navigation">
             <nav>
@@ -544,17 +597,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
-
-    <div class="menu-container js-menu-container" id="mobile-menu">
-      <button class="menu-toggle js-close-menu">X</button>
-
-      <ul class="mobile-menu">
-        <li><a href="" class="link">About</a></li>
-        <li><a href="" class="link">Products</a></li>
-        <li><a href="" class="link">Contacts</a></li>
-        <li><a href="" class="link">Career</a></li>
-      </ul>
-    </div>
 
     <script
       defer
