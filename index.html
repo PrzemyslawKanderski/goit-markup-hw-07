@@ -20,6 +20,13 @@
           <a class="logo1" href="index.html"
             >WEB<span class="dark-color">STUDIO</span></a
           >
+          <nav>
+            <button class="menu-toggle js-close-menu js-open-menu">
+              <svg width="32" height="22">
+                <use href="./images/icons.svg#icon-charm_menu-hamburger"></use>
+              </svg>
+            </button>
+          </nav>
           <div class="navigation">
             <nav>
               <ul class="menu">
@@ -41,7 +48,7 @@
             <li class="nav-items">
               <a class="contacts-top" href="mailto:info@devstudio.com">
                 <div class="svg-contacts">
-                  <svg width="16" height="12">
+                  <svg class="mobile-icon" width="16" height="12">
                     <use href="./images/icons.svg#icon-envelope"></use>
                   </svg>
                 </div>
@@ -57,16 +64,18 @@
               >
             </li>
           </ul>
-          <button class="menu-toggle js-close-menu">
+        </div>
+        <nav class="mobile-nav">
+          <button class="menu-toggle js-close-menu js-open-menu">
             <svg width="32" height="22">
-              <use href="./images/icons.svg#images/icons.svg"></use>
+              <use href="./images/icons.svg#icon-charm_menu-hamburger"></use>
             </svg>
           </button>
-        </div>
+        </nav>
       </header>
     </div>
     <main>
-      <section>
+      <section class="container">
         <div class="wrapper">
           <div class="inner-text">
             <h1>Effective Solutions For Your Business</h1>
@@ -141,206 +150,204 @@
           </ul>
         </section>
       </div>
-      <div class="container">
-        <section class="section">
-          <h2>What Are We Doing</h2>
+
+      <section class="section">
+        <h2>What Are We Doing</h2>
+        <ul class="images-list">
+          <li class="work-examples">
+            <img
+              src="images/PCmonitor.jpg"
+              width="370"
+              height="294"
+              alt="front of PC monitor"
+            />
+          </li>
+          <li class="work-examples">
+            <img
+              src="images/mobile screens.jpg"
+              width="370"
+              height="294"
+              alt="smartphone with three sceens going out of real screen"
+            />
+          </li>
+          <li class="work-examples">
+            <img
+              src="images/laptop and mobile.jpg"
+              width="370"
+              height="294"
+              alt="smartphone in hand on a laptop screen"
+            />
+          </li>
+        </ul>
+      </section>
+      <section class="container">
+        <div class="section-team">
+          <h2 class="team-container">Our Team</h2>
           <ul class="images-list">
-            <li class="work-examples">
+            <li class="inner-images">
               <img
-                src="images/PCmonitor.jpg"
-                width="370"
-                height="294"
-                alt="front of PC monitor"
+                src="images/Mark Guerrero.jpg"
+                alt="man with a thick beard in light-blue shirt"
+                width="270"
+                height="260"
               />
+              <div class="list-item2">Mark Guerrero</div>
+              <div class="list-item3">Product Designer</div>
+              <ul class="team-main-social">
+                <li class="social-icons">
+                  <a class="social-icons-center" href="#">
+                    <svg width="16" height="16">
+                      <use href="./images/icons.svg#icon-instagram-2"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-icons">
+                  <a class="social-icons-center" href="#">
+                    <svg width="16" height="16">
+                      <use href="./images/icons.svg#icon-twitter-1"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-icons">
+                  <a class="social-icons-center" href="#">
+                    <svg width="16" height="16">
+                      <use href="./images/icons.svg#icon-facebook-1"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-icons">
+                  <a class="social-icons-center" href="#">
+                    <svg width="16" height="16">
+                      <use href="./images/icons.svg#icon-linkedin-1"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
             </li>
-            <li class="work-examples">
+            <li class="inner-images">
               <img
-                src="images/mobile screens.jpg"
-                width="370"
-                height="294"
-                alt="smartphone with three sceens going out of real screen"
+                src="images/Tom Ford.jpg"
+                alt="man with rare beard profile in light blue shirt"
+                width="270"
+                height="260"
               />
+              <div class="list-item2">Tom Ford</div>
+              <div class="list-item3">Frontend Developer</div>
+              <ul class="team-main-social">
+                <li class="social-icons">
+                  <a class="social-icons-center" href="#">
+                    <svg width="16" height="16">
+                      <use href="./images/icons.svg#icon-instagram-2"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-icons">
+                  <a class="social-icons-center" href="#">
+                    <svg width="16" height="16">
+                      <use href="./images/icons.svg#icon-twitter-1"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-icons">
+                  <a class="social-icons-center" href="#">
+                    <svg width="16" height="16">
+                      <use href="./images/icons.svg#icon-facebook-1"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-icons">
+                  <a class="social-icons-center" href="#">
+                    <svg width="16" height="16">
+                      <use href="./images/icons.svg#icon-linkedin-1"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
             </li>
-            <li class="work-examples">
+            <li class="inner-images">
               <img
-                src="images/laptop and mobile.jpg"
-                width="370"
-                height="294"
-                alt="smartphone in hand on a laptop screen"
+                src="images/Camila Garcia.jpg"
+                alt="brunette lady with long hair and pink sweater"
+                width="270"
+                height="260"
               />
+              <div class="list-item2">Camila Garcia</div>
+              <div class="list-item3">Marketing</div>
+              <ul class="team-main-social">
+                <li class="social-icons">
+                  <a class="social-icons-center" href="#">
+                    <svg width="16" height="16">
+                      <use href="./images/icons.svg#icon-instagram-2"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-icons">
+                  <a class="social-icons-center" href="#">
+                    <svg width="16" height="16">
+                      <use href="./images/icons.svg#icon-twitter-1"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-icons">
+                  <a class="social-icons-center" href="#">
+                    <svg width="16" height="16">
+                      <use href="./images/icons.svg#icon-facebook-1"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-icons">
+                  <a class="social-icons-center" href="#">
+                    <svg width="16" height="16">
+                      <use href="./images/icons.svg#icon-linkedin-1"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="inner-images">
+              <img
+                src="images/Daniel Wilson.jpg"
+                alt="smiling man with a beard, darkbrown hair and grey t-shirt"
+                width="270"
+                height="260"
+              />
+              <div class="list-item2">Daniel Wilson</div>
+              <div class="list-item3">U Designer</div>
+              <ul class="team-main-social">
+                <li class="social-icons">
+                  <a class="social-icons-center" href="#">
+                    <svg width="16" height="16">
+                      <use href="./images/icons.svg#icon-instagram-2"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-icons">
+                  <a class="social-icons-center" href="#">
+                    <svg width="16" height="16">
+                      <use href="./images/icons.svg#icon-twitter-1"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-icons">
+                  <a class="social-icons-center" href="#">
+                    <svg width="16" height="16">
+                      <use href="./images/icons.svg#icon-facebook-1"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-icons">
+                  <a class="social-icons-center" href="#">
+                    <svg width="16" height="16">
+                      <use href="./images/icons.svg#icon-linkedin-1"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
             </li>
           </ul>
-        </section>
-      </div>
-      <div class="section-team">
-        <div class="container">
-          <section>
-            <h2 class="team-container">Our Team</h2>
-            <ul class="images-list">
-              <li class="inner-images">
-                <img
-                  src="images/Mark Guerrero.jpg"
-                  alt="man with a thick beard in light-blue shirt"
-                  width="270"
-                  height="260"
-                />
-                <div class="list-item2">Mark Guerrero</div>
-                <div class="list-item3">Product Designer</div>
-                <ul class="team-main-social">
-                  <li class="social-icons">
-                    <a class="social-icons-center" href="#">
-                      <svg width="16" height="16">
-                        <use href="./images/icons.svg#icon-instagram-2"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="social-icons">
-                    <a class="social-icons-center" href="#">
-                      <svg width="16" height="16">
-                        <use href="./images/icons.svg#icon-twitter-1"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="social-icons">
-                    <a class="social-icons-center" href="#">
-                      <svg width="16" height="16">
-                        <use href="./images/icons.svg#icon-facebook-1"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="social-icons">
-                    <a class="social-icons-center" href="#">
-                      <svg width="16" height="16">
-                        <use href="./images/icons.svg#icon-linkedin-1"></use>
-                      </svg>
-                    </a>
-                  </li>
-                </ul>
-              </li>
-              <li class="inner-images">
-                <img
-                  src="images/Tom Ford.jpg"
-                  alt="man with rare beard profile in light blue shirt"
-                  width="270"
-                  height="260"
-                />
-                <div class="list-item2">Tom Ford</div>
-                <div class="list-item3">Frontend Developer</div>
-                <ul class="team-main-social">
-                  <li class="social-icons">
-                    <a class="social-icons-center" href="#">
-                      <svg width="16" height="16">
-                        <use href="./images/icons.svg#icon-instagram-2"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="social-icons">
-                    <a class="social-icons-center" href="#">
-                      <svg width="16" height="16">
-                        <use href="./images/icons.svg#icon-twitter-1"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="social-icons">
-                    <a class="social-icons-center" href="#">
-                      <svg width="16" height="16">
-                        <use href="./images/icons.svg#icon-facebook-1"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="social-icons">
-                    <a class="social-icons-center" href="#">
-                      <svg width="16" height="16">
-                        <use href="./images/icons.svg#icon-linkedin-1"></use>
-                      </svg>
-                    </a>
-                  </li>
-                </ul>
-              </li>
-              <li class="inner-images">
-                <img
-                  src="images/Camila Garcia.jpg"
-                  alt="brunette lady with long hair and pink sweater"
-                  width="270"
-                  height="260"
-                />
-                <div class="list-item2">Camila Garcia</div>
-                <div class="list-item3">Marketing</div>
-                <ul class="team-main-social">
-                  <li class="social-icons">
-                    <a class="social-icons-center" href="#">
-                      <svg width="16" height="16">
-                        <use href="./images/icons.svg#icon-instagram-2"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="social-icons">
-                    <a class="social-icons-center" href="#">
-                      <svg width="16" height="16">
-                        <use href="./images/icons.svg#icon-twitter-1"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="social-icons">
-                    <a class="social-icons-center" href="#">
-                      <svg width="16" height="16">
-                        <use href="./images/icons.svg#icon-facebook-1"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="social-icons">
-                    <a class="social-icons-center" href="#">
-                      <svg width="16" height="16">
-                        <use href="./images/icons.svg#icon-linkedin-1"></use>
-                      </svg>
-                    </a>
-                  </li>
-                </ul>
-              </li>
-              <li class="inner-images">
-                <img
-                  src="images/Daniel Wilson.jpg"
-                  alt="smiling man with a beard, darkbrown hair and grey t-shirt"
-                  width="270"
-                  height="260"
-                />
-                <div class="list-item2">Daniel Wilson</div>
-                <div class="list-item3">U Designer</div>
-                <ul class="team-main-social">
-                  <li class="social-icons">
-                    <a class="social-icons-center" href="#">
-                      <svg width="16" height="16">
-                        <use href="./images/icons.svg#icon-instagram-2"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="social-icons">
-                    <a class="social-icons-center" href="#">
-                      <svg width="16" height="16">
-                        <use href="./images/icons.svg#icon-twitter-1"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="social-icons">
-                    <a class="social-icons-center" href="#">
-                      <svg width="16" height="16">
-                        <use href="./images/icons.svg#icon-facebook-1"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="social-icons">
-                    <a class="social-icons-center" href="#">
-                      <svg width="16" height="16">
-                        <use href="./images/icons.svg#icon-linkedin-1"></use>
-                      </svg>
-                    </a>
-                  </li>
-                </ul>
-              </li>
-            </ul>
-          </section>
         </div>
-      </div>
+      </section>
+
       <div class="container">
         <section class="clients">
           <h2>Customers</h2>
@@ -391,8 +398,8 @@
         </section>
       </div>
     </main>
-    <footer class="wrapper-bottom">
-      <div class="container">
+    <div class="container">
+      <footer class="wrapper-bottom">
         <div class="container-address">
           <div class="footer-logo-address">
             <a class="logo2" href="index.html"
@@ -463,8 +470,8 @@
             </div>
           </div>
         </div>
-      </div>
-    </footer>
+      </footer>
+    </div>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <form class="form-modal" name="order_form" autocomplete="on" required>
@@ -541,7 +548,7 @@
     <div class="menu-container js-menu-container" id="mobile-menu">
       <button class="menu-toggle js-close-menu">
         <svg width="32" height="22">
-          <use href="./images/icons.svg#images/icons.svg"></use>
+          <use href="./images/icons.svg#icon-charm_menu-hamburger"></use>
         </svg>
       </button>
 
