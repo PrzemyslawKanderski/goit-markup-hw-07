@@ -6,15 +6,10 @@
 
 body {
   margin: auto;
-  width: 440px;
+  width: 428px;
   overflow-x: hidden;
 }
-@media and body(min-width:320px) and body(max-width430px) {
-  .icons-items: hidden;
-}
-@media screen and body(max-width 460px) {
-  .section: hidden;
-}
+
 :root {
   --h1-color: #ffffff;
   --ocean: #404bbf;
@@ -28,7 +23,7 @@ body {
 }
 .logo1 {
   font-family: "Raleway";
-
+  margin: 16px 22px;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
@@ -38,8 +33,7 @@ body {
 }
 .container {
   margin: 0 auto;
-  width: 396px;
-  padding: 0 px;
+  width: 428px;
 }
 .container-header {
   display: flex;
@@ -47,13 +41,14 @@ body {
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 8px 0;
+  height: 80px;
 }
 
 .navigation-container {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  /* gap: 36px; */
+  gap: 36px;
 }
 .navigation {
   display: flex;
@@ -189,6 +184,7 @@ body {
   margin-bottom: 32px;
 }
 .wrapper {
+  max-width: 480px;
   max-height: 600px;
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
@@ -206,16 +202,22 @@ body {
   background-color: var(--navy-blue);
 }
 .icons-main {
-  margin-bottom: 40px;
+  margin-bottom: 44px;
 }
+
 h1 {
+  display: flex;
+  text-align: center;
+  margin-left: 54px;
+  margin-right: 54px;
+  width: 320px;
+  max-height: 80px;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 900;
-  font-size: 44px;
+  font-size: 36px;
   line-height: 1.36;
   color: var(--h1-color);
-  text-align: center;
 }
 h2 {
   font-family: "Roboto";
@@ -611,11 +613,12 @@ h3 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 24px;
+  gap: 72px;
 }
 .inner-images {
   display: flex;
   flex-direction: column;
+
   border-radius: 0px 0px 4px 4px;
   background-color: #ffffff;
   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.15);
@@ -807,4 +810,15 @@ h3 {
   fill: var(--cornflower);
   right: 40px;
   top: 8px;
+}
+.menu-toggle {
+  /* position: absolute; */
+  top: 16px;
+  right: 16px;
+  color: #fff;
+}
+.mobile-menu {
+  font-family: roboto;
+  list-style: none;
+  text-decoration: none;
 }

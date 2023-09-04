@@ -18,7 +18,7 @@
       <header class="container-header">
         <div class="navigation-container">
           <a class="logo1" href="index.html"
-            >Web<span class="dark-color">Studio</span></a
+            >WEB<span class="dark-color">STUDIO</span></a
           >
           <div class="navigation">
             <nav>
@@ -57,6 +57,11 @@
               >
             </li>
           </ul>
+          <button class="menu-toggle js-close-menu">
+            <svg width="32" height="22">
+              <use href="./images/icons.svg#images/icons.svg"></use>
+            </svg>
+          </button>
         </div>
       </header>
     </div>
@@ -64,7 +69,7 @@
       <section>
         <div class="wrapper">
           <div class="inner-text">
-            <h1>Effective Solutions for Your Business</h1>
+            <h1>Effective Solutions For Your Business</h1>
           </div>
           <div class="inner-button">
             <button class="button-main" type="button" data-modal-open>
@@ -533,5 +538,27 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg width="32" height="22">
+          <use href="./images/icons.svg#images/icons.svg"></use>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu">
+        <li><a href="" class="link">About</a></li>
+        <li><a href="" class="link">Products</a></li>
+        <li><a href="" class="link">Contacts</a></li>
+        <li><a href="" class="link">Career</a></li>
+      </ul>
+    </div>
+
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>
