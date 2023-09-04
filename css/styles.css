@@ -942,13 +942,12 @@ h3 {
     justify-content: left;
   }
   .footer-label {
-    width: 264px;
+    display: flex;
+    max-width: 264px;
   }
   .f-form {
     display: flex;
     flex-direction: row;
-  }
-  .button-footer {
-    display: flex;
+    align-items: center;
   }
 }
