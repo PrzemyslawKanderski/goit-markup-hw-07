@@ -184,7 +184,6 @@ body {
   margin-bottom: 32px;
 }
 .wrapper {
-  max-width: 480px;
   max-height: 600px;
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
@@ -195,7 +194,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 200px 0;
+  padding: 200px 200px;
   margin-bottom: 87px;
 }
 .wrapper-bottom {
@@ -629,6 +628,7 @@ h3 {
   display: flex;
   flex-wrap: wrap;
   align-content: space-between;
+  justify-content: center;
   row-gap: 72px;
   column-gap: 16px;
   align-items: center;
@@ -805,48 +805,35 @@ h3 {
 }
 
 .button-svg {
-  position: absolute;
-  fill: var(--cornflower);
-  right: 40px;
-  top: 8px;
+  display: flex;
+  fill: var(--light-slate);
 }
 
 .mobile-icon {
-  fill: #2e2f42;
+  fill: var(--navy-blue);
 }
-.menu-toggle {
-  min-height: 40px;
-  min-width: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 
-  margin: 0;
-  padding: 0;
-  background-color: transparent;
-  cursor: pointer;
-  border: none;
-  border-radius: 50%;
-  outline: none;
+.menu .link {
+  padding: 10px;
+  color: inherit;
+  text-decoration: none;
 }
-/* @media (min-width: 768px) {
-  .menu-toggle {
-    display: none;
-  }
-} */
-
+.menu .link:hover,
+.menu .link:focus {
+  text-decoration: underline;
+}
+.menu .link {
+  padding: 10px;
+  color: inherit;
+  text-decoration: none;
+}
+.menu .link:hover,
+.menu .link:focus {
+  text-decoration: underline;
+}
 .menu-toggle:hover,
 .menu-toggle:focus {
   background-color: rgba(0, 0, 0, 0.1);
-}
-.js-open-menu {
-  font-family: roboto;
-  list-style: none;
-  text-decoration: none;
-}
-.js-menu-container {
-  width: 428px;
-  height: 796px;
 }
 .menu-container {
   position: fixed;
@@ -857,7 +844,6 @@ h3 {
   padding: 32px;
   background-color: #3f51b5;
   z-index: 999;
-
   transform: translateX(100%);
   transition: transform 250ms ease-in-out;
 }
@@ -870,8 +856,8 @@ h3 {
   right: 16px;
   color: #fff;
 }
+
 .mobile-menu {
-  background-color: var(--iris);
   padding: 0;
   margin: 0;
   list-style: none;
@@ -881,6 +867,4 @@ h3 {
   padding: 10px;
   color: #fff;
   text-decoration: none;
-}
-.js-close-menu {
 }
