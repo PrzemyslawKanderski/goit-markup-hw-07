@@ -991,6 +991,12 @@ h3 {
     align-items: center;
     flex-wrap: nowrap;
   }
+  .wrapper {
+    margin-bottom: 72px;
+  }
+  .inner-text {
+    width: 496px;
+  }
   .icons-main {
     margin-bottom: 40px;
   }
