@@ -908,13 +908,20 @@ h3 {
   }
   .menu {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     height: 16px;
     flex-grow: 1;
   }
+  .navigation-container {
+    max-width: 1200px;
+    height: 72px;
+    flex-wrap: nowrap;
+    gap: 0;
+  }
+
   .contacts-menu {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
   }
   .menu-contacts-top {
     display: flex;
@@ -949,5 +956,27 @@ h3 {
     display: flex;
     flex-direction: row;
     align-items: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  body {
+    width: 1440px;
+  }
+  .container {
+    display: flex;
+    width: 1198px;
+  }
+  .navigation-container {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 36px;
+  }
+  .container-header {
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+  .icons-background {
+    display: flex;
   }
 }
