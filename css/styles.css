@@ -234,8 +234,6 @@ h3 {
   font-size: 14px;
   line-height: 1.71;
   margin-bottom: 72px;
-
-  /* padding-bottom: 113px; */
   color: var(--slate);
 }
 .list-item2 {
@@ -571,13 +569,10 @@ h3 {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  /* gap: 24px; */
   margin-bottom: 72px;
 }
 .icons-items {
   display: flex;
-
-  /* width: 264px; */
   gap: 8px;
   flex-direction: column;
   cursor: pointer;
@@ -705,7 +700,6 @@ h3 {
 
 .address-social {
   display: flex;
-  /* gap: 3em; */
 }
 .footer-logo-address {
   display: flex;
@@ -959,12 +953,8 @@ h3 {
   }
 }
 @media screen and (min-width: 1200px) {
-  body {
-    width: 1440px;
-  }
   .container {
-    display: flex;
-    width: 1198px;
+    width: 1600px;
   }
   .navigation-container {
     flex-wrap: nowrap;
@@ -976,7 +966,69 @@ h3 {
     align-items: center;
     flex-wrap: nowrap;
   }
+  .icons-main {
+    margin-bottom: 40px;
+  }
+  h1 {
+    font-size: 44px;
+    margin: 0;
+    width: fit-content;
+  }
+  .list-item1 {
+    margin: auto;
+    padding-bottom: 113px;
+  }
+  .section {
+    display: flex;
+    flex-direction: column;
+  }
+  .section-team {
+    height: 740px;
+    padding-bottom: 0;
+  }
+  .icons-nav {
+    flex-wrap: nowrap;
+  }
   .icons-background {
     display: flex;
+    align-items: center;
+    width: 264px;
+  }
+  .images-list {
+    flex-wrap: nowrap;
+    gap: 24px;
+  }
+  .clients-main {
+    flex-wrap: nowrap;
+  }
+  .clients-icons {
+    width: 164px;
+  }
+  .container-address {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+  .logo2 {
+    justify-content: flex-start;
+  }
+  .address-social {
+    gap: 3em;
+  }
+  .footer-text {
+    justify-content: flex-start;
+  }
+  .f-form {
+    flex-direction: row;
+    gap: 24px;
+  }
+  .footer-label {
+    display: flex;
+  }
+  .input-footer {
+    width: 264px;
+  }
+  .button-footer {
+    display: flex;
+    margin: 0;
   }
 }
